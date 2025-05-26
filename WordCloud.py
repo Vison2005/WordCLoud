@@ -12,7 +12,9 @@ from PyQt5.QtCore import Qt, QSize
 
 import jieba
 import imageio
-from wordcloud import WordCloud
+from wordcloud import WordCloud, STOPWORDS
+from PIL import Image
+import numpy as np
 
 class WordCloudApp(QMainWindow):
     def __init__(self):
